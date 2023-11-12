@@ -48,8 +48,44 @@ public:
     // This function takes in a question and a filename.
     // It should write the final answer to the specified filename.
 
+
     /* -----------------------------------------*/
     /* Please do not touch the code above this line */
 
     // You can add attributes/helper functions here
+    
+    struct paragraph
+    {
+        int paragraph_no;
+        int count_in_para = 0;
+        double score;
+    };
+
+    struct page
+    {
+        vector<paragraph> paras;
+        int page_no;
+    };
+    
+
+    class boobs // built_over_other_built_structures
+    {
+        public:
+        string word;
+        int total_count = 0;
+        vector<page> instances;
+        boobs();
+        boobs(string w);
+    };
+
+    class book
+    {
+        public:
+        int book_no;
+        vector<vector<boobs>> hashtable;
+        book();
+    };
+
+    vector<book> bookshelf;
+       
 };
